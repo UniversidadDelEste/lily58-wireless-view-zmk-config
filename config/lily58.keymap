@@ -86,7 +86,7 @@
             bindings = <
 &kp EXCL   &kp QMARK    &kp AT_SIGN  &kp HASH  &kp DLLR         &kp AMPS                     &trans       &trans     &trans        &trans           &trans    &trans
 &kp GRAVE  &kp PERCENT  &kp LT       &kp GT    &kp PRINTSCREEN  &kp INS                      &trans       &trans     &kp UP_ARROW  &trans           &trans    &trans
-&kp F1     &kp F2       &kp F3       &kp F4    &kp F5           &kp F6                       &trans       &kp LEFT   &kp DOWN      &kp RIGHT_ARROW  &trans    &trans
+&kp F1     &kp F2       &kp F3       &kp F4    &kp F5           &kp F6                       &caps_word   &kp LEFT   &kp DOWN      &kp RIGHT_ARROW  &trans    &trans
 &kp F7     &kp F8       &kp F9       &kp F10   &kp F11          &kp F12   &kp END    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL     &kp LBKT         &kp RBKT  &kp BSLH
                                      &trans    &trans           &trans    &trans     &trans  &trans       &trans     &trans
             >;
