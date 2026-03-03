@@ -1,0 +1,21 @@
+&i2c0 {
+    status = "okay";
+    sda-pin = <8>;
+    scl-pin = <6>;
+
+    cirque_pinnacle: cirque_pinnacle@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        status = "okay";
+        dr-gpios = <&gpio0 9 GPIO_ACTIVE_HIGH>;
+        sensitivity = "4x";
+    };
+};
+
+/ {
+    trackpad_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&cirque_pinnacle>;
+        layers = <0>;
+    };
+};
