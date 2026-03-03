@@ -14,8 +14,7 @@
 
 / {
     trackpad_listener {
-        compatible = "zmk,input-behavior-listener";
+        compatible = "zmk,input-listener";
         device = <&cirque_pinnacle>;
-        layers = <0>;
     };
 };
