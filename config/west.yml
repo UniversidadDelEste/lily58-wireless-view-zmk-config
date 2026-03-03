@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: badjeff
-      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,12 +11,6 @@ manifest:
       import: app/west.yml
     - name: cirque-input-module
       remote: petejohanson
-      revision: main
-    - name: zmk-input-behavior-listener
-      remote: badjeff
-      revision: main
-    - name: zmk-pointing-device-input-bridge
-      remote: badjeff
       revision: main
   self:
     path: config
