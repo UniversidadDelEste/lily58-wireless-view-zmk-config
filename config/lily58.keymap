@@ -13,7 +13,7 @@
         mail: mail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp Y &kp P &kp E &kp SPACE &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G &kp DOT &kp DOT &kp DOT &kp T &kp A &kp N &kp O &kp M &kp A &kp N &kp F &kp E &kp R &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M &kp SPACE &kp LS(T) &kp Y &kp P &kp E &kp SPACE &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G &kp DOT &kp DOT &kp DOT &kp T &kp A &kp N &kp O &kp N3 &kp N2>;
+            bindings = <&none &kp LS(T) &kp T &kp A &kp N &kp O &kp M &kp A &kp N &kp F &kp E &kp R &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "MAIL";
         };
 
@@ -27,7 +27,7 @@
         ip_local: ip_local {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp Y &kp P &kp E &kp SPACE &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G &kp DOT &kp DOT &kp DOT &kp N1 &kp N9 &kp N2 &kp DOT &kp N1 &kp N6 &kp N8>;
+            bindings = <&none &kp LS(T) &kp N1 &kp N9 &kp N2 &kp DOT &kp N1 &kp N6 &kp N8>;
             label = "IP_LOCAL";
         };
 
