@@ -45,6 +45,20 @@
             bindings = <&kp S &kp U &kp D &kp O &kp SPACE &kp P &kp A &kp C &kp M &kp A &kp N &kp SPACE &kp MINUS &kp LS(S) &kp Y &kp U>;
             label = "UPDATE";
         };
+
+        mail40: mail40 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp A &kp N &kp O &kp M &kp A &kp N &kp F &kp E &kp R &kp N4 &kp N0 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M &kp SPACE>;
+            label = "MAIL40";
+        };
+
+        canchi: canchi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(C) &kp LS(A) &kp LS(N) &kp C &kp H &kp I &kp C &kp H &kp A &kp N3 &kp N3>;
+            label = "CANCHI";
+        };
     };
 
     combos {
@@ -121,11 +135,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp LC(A)                      &trans  &kt LPAR        &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT
-&trans  &trans  &trans  &trans  &trans  &kp LC(V)                      &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp SLASH         &kp BSLH           &kp HASH
-&trans  &trans  &trans  &trans  &trans  &kp LC(C)                      &trans  &kp SEMICOLON   &kp COMMA              &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp DOLLAR
-&trans  &trans  &trans  &trans  &trans  &mkp MB1   &mo 3       &mo 4   &mail   &kp TILDE       &kp QUESTION           &kp EXCLAMATION   &kp PIPE           &kp AMPERSAND
-                        &trans  &trans  &trans     &kp CAPS    &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &kp LC(A)                      &canchi  &kt LPAR        &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT
+&trans  &trans  &trans  &trans  &trans  &kp LC(V)                      &trans   &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp SLASH         &kp BSLH           &kp HASH
+&trans  &trans  &trans  &trans  &trans  &kp LC(C)                      &mail40  &kp SEMICOLON   &kp COMMA              &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp DOLLAR
+&trans  &trans  &trans  &trans  &trans  &mkp MB1   &mo 3       &mo 4   &mail    &kp TILDE       &kp QUESTION           &kp EXCLAMATION   &kp PIPE           &kp AMPERSAND
+                        &trans  &trans  &trans     &kp CAPS    &trans  &trans   &trans          &trans
             >;
         };
 
