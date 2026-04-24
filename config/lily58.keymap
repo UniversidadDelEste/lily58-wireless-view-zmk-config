@@ -135,11 +135,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp LC(A)                      &canchi  &kt LPAR        &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT
-&trans  &trans  &trans  &trans  &trans  &kp LC(V)                      &trans   &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp SLASH         &kp BSLH           &kp HASH
-&trans  &trans  &trans  &trans  &trans  &kp LC(C)                      &mail40  &kp SEMICOLON   &kp COMMA              &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp DOLLAR
-&trans  &trans  &trans  &trans  &trans  &mkp MB1   &mo 3       &mo 4   &mail    &kp TILDE       &kp QUESTION           &kp EXCLAMATION   &kp PIPE           &kp AMPERSAND
-                        &trans  &trans  &trans     &kp CAPS    &trans  &trans   &trans          &trans
+&trans  &trans  &trans  &trans  &trans          &kp LC(A)                      &canchi  &kt LPAR        &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT
+&trans  &trans  &trans  &trans  &trans          &kp LC(V)                      &trans   &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp SLASH         &kp BSLH           &kp HASH
+&trans  &trans  &trans  &trans  &kp LA(RETURN)  &kp LC(C)                      &mail40  &kp SEMICOLON   &kp COMMA              &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp DOLLAR
+&trans  &trans  &trans  &trans  &trans          &mkp MB1   &mo 3       &mo 4   &mail    &kp TILDE       &kp QUESTION           &kp EXCLAMATION   &kp PIPE           &kp AMPERSAND
+                        &trans  &trans          &trans     &kp CAPS    &trans  &trans   &trans          &trans
             >;
         };
 
