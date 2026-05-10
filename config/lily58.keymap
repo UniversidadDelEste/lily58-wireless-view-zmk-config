@@ -59,6 +59,20 @@
             bindings = <&none &kp LS(C) &kp LS(A) &kp LS(N) &kp C &kp H &kp I &kp C &kp H &kp A &kp N3 &kp N3>;
             label = "CANCHI";
         };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp E &kp S &kp T &kp AT &kp A &kp P &kp P &kp A &kp F &kp E &kp R &kp DOT &kp C &kp O &kp M>;
+            label = "TEST";
+        };
+
+        contrasenatest: contrasenatest {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp E &kp S &kp T &kp N1 &kp N2 &kp N3 &kp N4 &kp AT>;
+            label = "CONTRASENATEST";
+        };
     };
 
     combos {
@@ -135,11 +149,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &kp LC(A)                      &canchi  &kt LPAR        &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT
-&trans  &trans  &trans  &trans  &kp LG(S)       &kp LC(V)                      &trans   &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp SLASH         &kp BSLH           &kp HASH
-&trans  &trans  &trans  &trans  &kp LA(RETURN)  &kp LC(C)                      &mail40  &kp SEMICOLON   &kp COMMA              &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp DOLLAR
-&trans  &trans  &trans  &trans  &trans          &mkp MB1   &mo 3       &mo 4   &mail    &kp TILDE       &kp QUESTION           &kp EXCLAMATION   &kp PIPE           &kp AMPERSAND
-                        &trans  &trans          &trans     &kp CAPS    &trans  &trans   &trans          &trans
+&trans  &trans  &trans  &trans  &trans          &kp LC(A)                               &canchi  &kt LPAR        &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT
+&trans  &trans  &trans  &trans  &kp LG(S)       &kp LC(V)                               &test    &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp SLASH         &kp BSLH           &kp HASH
+&trans  &trans  &trans  &trans  &kp LA(RETURN)  &kp LC(C)                               &mail40  &kp SEMICOLON   &kp COMMA              &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp DOLLAR
+&trans  &trans  &trans  &trans  &trans          &mkp MB1   &mo 3       &mo 4            &mail    &kp TILDE       &kp QUESTION           &kp EXCLAMATION   &kp PIPE           &kp AMPERSAND
+                        &trans  &trans          &trans     &kp CAPS    &contrasenatest  &trans   &trans          &trans
             >;
         };
 
